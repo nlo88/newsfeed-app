@@ -1,11 +1,14 @@
 import React from 'react';
 
-function UserLogin(props) {
+
+function Articles() {
+
+    
     return (
         <div>
-            User Login
+           Articles
         </div>
     );
 }
 
-export default UserLogin;
+export default Articles;
