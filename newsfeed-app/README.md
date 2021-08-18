@@ -14,7 +14,7 @@ Build a website where users can access news, be able to click on the articles to
 
 ### Step 1. Set up your GitHub page and Install
 
-- Create your GitRepository , be sure to set it public and include ReadMe.MD file. 
+- Create your git page repository , be sure to set it public and include ReadMe.MD file. 
 - Create directory on your terminal, git clone your repository.
 - Install npx create-react-dom
 - npm i create-react-dom newsfeed-app
