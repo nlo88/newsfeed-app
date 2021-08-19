@@ -1,16 +1,14 @@
 import React, { useState, useEffect }from 'react';
-import { Link } from 'react-router-dom';
-import Articles from './Articles';
 
 
 
 function Article({ news }) {
 
-    
+    console.log(news)
     
     return (
         <div className="details-container">
-        
+        <h3>ARTICLE: {news}</h3>
         <div className="news">
         
         <h1 className="news__title">{news.title}</h1>

@@ -6,6 +6,7 @@ import Nav from './Components/Nav';
 import Articles from './Articles/Articles';
 import UserLogin from './Components/UserLogin';
 import Home from './Components/Home';
+import Article from './Articles/Article';
 
 function App() {
   
@@ -42,7 +43,6 @@ function App() {
  
   return (
 
-
   <Router>
     <div className="App">
       <Home />
@@ -51,10 +51,18 @@ function App() {
     
     <div className="content">
     <Switch>
-        <Route exact path="/">
-        <Articles
-        news={news}
-        />
+        <Route exact path="/articles">
+        <Articles news={news}/>
+        
+        <Route exact path="/article/:name"
+                render ={ routerProps =>
+                <Article setNews={setNews}
+                match={routerProps.match}
+                news={news}/>
+                
+                }
+        /> 
+        
         <UserLogin />
         </Route>
     </Switch>
