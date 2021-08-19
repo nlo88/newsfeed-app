@@ -1,12 +1,11 @@
 import React, { useState, useEffect} from 'react';
-import Article from './Article';
-import { Link } from 'react-router-dom'
+import { Link, Route , Redirect } from 'react-router-dom'
 
 
 function Articles( {news} ) {
 
     console.log(news)
-    console.log(news[0])
+    // console.log(news[0])
 
 
     if(!news.length) {
@@ -21,7 +20,19 @@ function Articles( {news} ) {
             
         <div>         
         {news.map((news) => (
-            <p>{news.url}</p>
+           
+           <div className="top__headlines__container">
+            <Link to={`/top-headlines?${news.source}`} key={news.id}>
+                <div className="title">{news.title}</div>
+                <img src={news.urlToImage} alt={news.name} width ="50%"/>
+                <div className="publishedAt">{news.publishedAt}</div>
+            <Route path="/" render ={() => <Redirect to={news.url}/>}/>
+            </Link>
+            <div className="description">{news.description}</div>
+            <div className="content">{news.content}</div>
+            </div>
+            
+            // <p>{news.title}{news.content}{news.url}</p>
   
         ))}
 

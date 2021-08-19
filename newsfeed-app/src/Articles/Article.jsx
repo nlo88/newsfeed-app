@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
+import { Link } from 'react-router-dom';
 import Articles from './Articles';
+
 
 
 function Article({ news }) {
     
     return (
-        <div>
+        <div className="detail-container">
         <div className="news">
         <h1 className="news__title">{news.title}</h1>
         <p className="news__desc">{news.description}</p>

@@ -6,6 +6,7 @@ function Nav(props) {
         <div>
           HOME | WORLD | ENTERTAINMENT | LOGIN
         </div>
+        
     );
 }
 
