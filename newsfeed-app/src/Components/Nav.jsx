@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-
-function Nav(props) {
+const Nav = () => {
     return (
-        <div>
-          HOME | WORLD | ENTERTAINMENT | LOGIN
+
+        <nav  className="navbar">
+        <div classname="links">
+          <Link to="/">HOME   |    </Link>
+          <Link to="/login">LOGIN</Link>
         </div>
-        
+        </nav>
     );
 }
 

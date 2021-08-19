@@ -3,7 +3,7 @@ import React from 'react';
 function UserLogin(props) {
     return (
         <div>
-            Welcome, _________
+            Welcome, _____
         </div>
     );
 }

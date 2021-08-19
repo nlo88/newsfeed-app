@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav';
 // import { API_KEY } from './Config/env';
 import Articles from './Articles/Articles';
 import UserLogin from './Components/UserLogin';
-
+import Home from './Components/Home';
 
 function App() {
   
@@ -41,14 +41,35 @@ function App() {
 
  
   return (
+
+
+  <Router>
     <div className="App">
+      <Home />
+      <Nav />
     
-    <UserLogin />
-    <Nav />
-    <Articles 
-    news={news}/>
+    
+    <div className="content">
+    <Switch>
+        <Route exact path="/">
+        <Articles
+        news={news}
+        />
+        <UserLogin />
+        </Route>
+    </Switch>
     
     </div>
+    
+    {/* <Articles
+        news={news}
+        /> */}
+    
+    </div>
+  </Router>
+
+
+  
   );
 }
 
