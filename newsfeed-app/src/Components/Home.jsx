@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Home(props) {
     return (
-        <div>
-               <Link to="/">NEWSLINE</Link>
+        <div className="top__logo">
+            <h2>NEWSLINE</h2>
         </div>
     );
 }

@@ -16,20 +16,22 @@ function Articles( { news } ) {
                 
         (
            <div className="top__headlines__container">
-            
+            <div className="title">{news.title}</div>
+           
             <Link to={`/article?${news.name}`} news={news} key={news.name}>
                 <img src={news.urlToImage} alt={news.name} width ="50%"/>
-                <div className="title">{news.title}</div>
+                
             <Route path="/article/:name" render={()=> <Redirect to={news.id} news={news}/>}/>
             </Link>
             
             <div className="description">{news.description}</div>
             <div className="content">{news.content}</div>
+            
             <a href={news.url} target="_blank">Read more...</a>
             <div className="publishedAt">{news.publishedAt}</div> 
+            
             </div>
-            
-            
+                     
   
         ))}
         </div>
