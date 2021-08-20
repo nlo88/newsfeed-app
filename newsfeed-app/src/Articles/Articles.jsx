@@ -27,7 +27,7 @@ function Articles( { news } ) {
             <div className="description">{news.description}</div>
             <div className="content">{news.content}</div>
             
-            <a href={news.url} target="_blank">Read more...</a>
+            <a href={news.url} target="_blank" className="readMore">Read more...</a>
             <div className="publishedAt">{news.publishedAt}</div> 
             
             </div>

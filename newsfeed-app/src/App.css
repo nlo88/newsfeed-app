@@ -7,6 +7,13 @@
 
 .top__logo {
   text-align: center;
+  font-size: 5rem;
+  
+  color: black;
+  font-style: italic;
+  display: inline-block;
+  margin: 0.2rem 0;
+  padding: 0.2rem;
 }
 
 .navbar {
@@ -16,6 +23,9 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom:1px solid #f2f2f2;
+  font-size: 2rem;
+  
+ 
 }
 
 .navbar h1 {
@@ -34,7 +44,7 @@
 }
 
 .navbar a:hover {
-  color: greenyellow;
+  color: orange;
 }
 
 
@@ -53,3 +63,10 @@ content {
   text-align: center;
 }
 
+.readMore {
+  background-color: yellowgreen;
+  color: black;
+  display: inline-block;
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+}

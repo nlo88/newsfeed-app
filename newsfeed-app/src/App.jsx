@@ -44,7 +44,7 @@ function App() {
       
         <div className="content">
         <Switch>
-        <Route exact path="/articles">
+        <Route exact path="/">
         <Articles news={news}/>
         <Route exact path="/article/:name" render ={ routerProps =>
                 <Article match={routerProps.match}/>}
