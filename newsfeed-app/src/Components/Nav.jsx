@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 
 function Home (props) {
     return (
-        <div>
+        <div>   
+                
                 <nav className="navbar">
-                <a href="/home">HOME</a>
-                <a href="/login">LOGIN</a>
+                <a href="/">HOME</a>
+                <a href="/login">WORLD</a>
+                <a href="/login">TECH</a>
+                <a href="/login">BUSINESS</a>
+                <a href="/login">POLITICS</a>
                 </nav>
+        
         </div>
         
     );

@@ -1,13 +1,13 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import { Link, Route , Redirect } from 'react-router-dom'
-import Article from './Article';
+
 
 function Articles( { news } ) {
 
     console.log(news)
     
     if(!news.length) {
-        return <h2>No Articles Found!</h2>
+        return <h2 style={{fontStyle:"italic"}}>...Loading</h2>
     }
     else {
         return (
@@ -18,17 +18,16 @@ function Articles( { news } ) {
            <div className="top__headlines__container">
             <div className="title">{news.title}</div>
            
-            <Link to={`/article?${news.name}`} news={news} key={news.name}>
-                <img src={news.urlToImage} alt={news.name} width ="50%"/>
+            <Link to={`/articles/${news.title}`} news={news} key={news.title}>
+                <img src={news.urlToImage} alt={news.title} width ="50%"/>
                 
-            <Route path="/article/:name" render={()=> <Redirect to={news.id} news={news}/>}/>
+            <Route path="/articles/:title" render={()=> <Redirect to={news.title} news={news}/>}/>
             </Link>
             
             <div className="description">{news.description}</div>
             <div className="content">{news.content}</div>
-            
-            <a href={news.url} target="_blank" className="readMore">Read more...</a>
             <div className="publishedAt">{news.publishedAt}</div> 
+            <a href={news.url} target="_blank" className="readMore">Read more...</a>
             
             </div>
                      

@@ -1,11 +1,13 @@
-import React, { useState, useEffect }from 'react';
+import React from 'react';
 
 
+function Article ({ news , match }) {
 
-function Article({ news }) {
-
+    const articleTitle = match.props.title
     console.log(news)
+    console.log(articleTitle)
     
+
     return (
         <div className="details-container">
         <h3>ARTICLE: {news}</h3>

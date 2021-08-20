@@ -17,34 +17,35 @@
 }
 
 .navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom:1px solid #f2f2f2;
-  font-size: 2rem;
   
+  align-items: center;
  
-}
+  margin: 0 auto;
+  font-size: 2rem;
+  border-bottom:1px solid #f2f2f2;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  
+ }
 
 .navbar h1 {
-  color: green;
+  color: black;
 }
 
 .navbar .link {
-  margin-left: auto;
+  margin: auto;
 }
 
 .navbar a {
-  margin-left: 16px;
+  text-align: center;
   text-decoration: none;
-  padding: 6px;
-
+  padding: 10px;
+  font-size: 2rem;
+  
 }
 
 .navbar a:hover {
-  color: orange;
+  color: green;
 }
 
 
@@ -61,6 +62,14 @@ content {
 
 .top__headlines__container {
   text-align: center;
+  margin-bottom: 4rem;
+  
+}
+
+.top__headlines__container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    
 }
 
 .readMore {
@@ -69,4 +78,11 @@ content {
   display: inline-block;
   margin: 0.2rem 0;
   padding: 0.2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+
+.search__it {
+  justify-content: right;
 }

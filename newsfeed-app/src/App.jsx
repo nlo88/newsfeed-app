@@ -14,11 +14,12 @@ function App() {
   const getNews = async () => {
 
     // const url = `https://newsapi.org/v2/everything?q=keyword&apiKey=${API_KEY}`
-    const url = `https://newsapi.org/v2/everything?q=keyword&apiKey=59d6a6fc34d141a6b6b229e993b06be4`
+    const url = `https://newsapi.org/v2/everything?q=keyword=weather&apiKey=59d6a6fc34d141a6b6b229e993b06be4`
 
     fetch(url)
     .then(res => res.json())
-    .then(res => { setNews(res.articles)
+    .then(res => { 
+      setNews(res.articles)
       console.log(news)
     })
     .catch(err => console.log(err))
@@ -40,17 +41,18 @@ function App() {
     <div className="App">
     <Home />
     <Nav />
-      
-      
+           
         <div className="content">
         <Switch>
         <Route exact path="/">
         <Articles news={news}/>
-        <Route exact path="/article/:name" render ={ routerProps =>
+        
+        <Route exact path="/articles/:title" render ={ routerProps =>
                 <Article match={routerProps.match}/>}
                 /> 
         </Route>
         </Switch>
+        
       </div>
     
     </div>
