@@ -16,6 +16,8 @@ function Articles( { news } ) {
                 
         (
            <div className="top__headlines__container">
+            
+            <div className="content">{news.author}</div>
             <div className="title">{news.title}</div>
            
             <Link to={`/articles/${news.title}`} news={news} key={news.title}>
@@ -26,7 +28,9 @@ function Articles( { news } ) {
             
             <div className="description">{news.description}</div>
             <div className="content">{news.content}</div>
+            
             <div className="publishedAt">{news.publishedAt}</div> 
+            
             <a href={news.url} target="_blank" className="readMore">Read more...</a>
             
             </div>

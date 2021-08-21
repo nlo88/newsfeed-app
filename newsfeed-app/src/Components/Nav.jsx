@@ -11,6 +11,7 @@ function Home (props) {
                 <a href="/login">TECH</a>
                 <a href="/login">BUSINESS</a>
                 <a href="/login">POLITICS</a>
+                <a href="/login">SPORTS</a>
                 </nav>
         
         </div>

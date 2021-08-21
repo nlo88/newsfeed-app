@@ -4,9 +4,11 @@ import './App.css';
 // import { API_KEY } from './Config/env';
 import Articles from './Articles/Articles';
 import UserLogin from './Components/UserLogin';
-import Nav from "./Components/Nav"
+import Nav from './Components/Nav';
 import Article from './Articles/Article';
 import Home from "./Components/Home";
+
+
 function App() {
   
   const [news, setNews] = useState({})
@@ -14,7 +16,7 @@ function App() {
   const getNews = async () => {
 
     // const url = `https://newsapi.org/v2/everything?q=keyword&apiKey=${API_KEY}`
-    const url = `https://newsapi.org/v2/everything?q=keyword=weather&apiKey=59d6a6fc34d141a6b6b229e993b06be4`
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=59d6a6fc34d141a6b6b229e993b06be4`
 
     fetch(url)
     .then(res => res.json())
@@ -51,6 +53,14 @@ function App() {
                 <Article match={routerProps.match}/>}
                 /> 
         </Route>
+
+        <Route></Route>
+        
+        <Route></Route>
+        
+        <Route></Route>
+        
+        
         </Switch>
         
       </div>

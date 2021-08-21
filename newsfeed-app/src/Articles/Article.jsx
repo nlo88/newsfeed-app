@@ -10,7 +10,7 @@ function Article ({ news , match }) {
 
     return (
         <div className="details-container">
-        <h3>ARTICLE: {news}</h3>
+        {/* <h3>ARTICLE: {news}</h3>
         <div className="news">
         
         <h1 className="news__title">{news.title}</h1>
@@ -20,7 +20,7 @@ function Article ({ news , match }) {
         <span className="news__published">{news.publishedAt}</span>
         <span className="news__source">{news.source.name}</span>
         </div>
-        
+         */}
         </div>
     );
 }
