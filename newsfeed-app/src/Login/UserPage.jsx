@@ -6,7 +6,7 @@ const UserLogin = (props) => {
    return ( 
       <div>   
                 
-      <nav className="personalize__navbar">
+      <nav className="userform">
       <p>
         
       Thank you , {props.name}

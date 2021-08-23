@@ -10,6 +10,7 @@ import Contactus from './Login/Contactus';
 function App () {
   
    return (
+   
     <Router>
         <div className="App">
         <Home />
@@ -22,7 +23,8 @@ function App () {
             <Contactus />
           </Route>
 
-          <Route exact path="/:category" component={News}>
+          <Route  exact path="/:category" 
+                  component={News}>
           </Route> 
                     
           <Route exact path="/">
@@ -34,6 +36,7 @@ function App () {
          
         </div>
     </Router>
+  
   );
 }
 

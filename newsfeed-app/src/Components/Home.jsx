@@ -3,7 +3,7 @@ import React from 'react';
 function Home(props) {
 
     const date =new Date().toLocaleString()
-  
+    
     return (
         <div className="header">
             <div className="top__logo" ><h2>- NEWSLINE -</h2></div>

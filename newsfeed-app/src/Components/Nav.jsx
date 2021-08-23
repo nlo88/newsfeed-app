@@ -1,25 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Home =({ news })=> {
     
        
     return (
         <div className="showcase">   
                 
+                <div className="left-side">
                 <nav className="navbar">
 
                 <Link to="/">HOME</Link>
-                <Link to="/business">BUSINESS</Link>
-                <Link to="/politics">POLITICS</Link>
                 <Link to="/health">HEALTH</Link>
                 <Link to="/entertainment">ENTERTAINMENT</Link>
                 <Link to="/sports">SPORTS</Link>
-  
+                    
+                    <div className="right-side">
+                        <Link to="/contactus">CONTACT US</Link> 
+                    </div>
                 </nav>
-                <Link to="/contactus">CONTACT US</Link> 
-        
+                </div>
+                
+                
         </div>
         
     );

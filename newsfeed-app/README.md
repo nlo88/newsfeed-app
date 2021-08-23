@@ -40,7 +40,6 @@ REACT_APP_API_KEY= your key information goes here.
 
 
 
-
 Create basic component name Home put some placeholder text into it so that we can make sure it's loading. Import Home component into App.js and render it inside the main tags inside of the App component. Make sure you can see the placeholder text being rendered in the browser before you move on to the next step.
 
 ### Step 5.
