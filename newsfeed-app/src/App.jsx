@@ -1,72 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-// import { API_KEY } from './Config/env';
-import Articles from './Articles/Articles';
-import UserLogin from './Components/UserLogin';
 import Nav from './Components/Nav';
-import Article from './Articles/Article';
 import Home from "./Components/Home";
+import News from './Components/News';
+import Contactus from './Login/Contactus';
 
 
-function App() {
+function App () {
   
-  const [news, setNews] = useState({})
-  const [searchNews, setSearchNews] = useState('');
-  const getNews = async () => {
-
-    // const url = `https://newsapi.org/v2/everything?q=keyword&apiKey=${API_KEY}`
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=59d6a6fc34d141a6b6b229e993b06be4`
-
-    fetch(url)
-    .then(res => res.json())
-    .then(res => { 
-      setNews(res.articles)
-      console.log(news)
-    })
-    .catch(err => console.log(err))
-  }
-
-  useEffect(() => getNews(),[])
-
-    function handleChange(event){
-      setSearchNews(event.target.value);
-    }
-
-    function handleSubmit(event){
-      event.preventDevault();
-      getNews(searchNews);
-    }
-
    return (
     <Router>
-    <div className="App">
-    <Home />
-    <Nav />
-           
-        <div className="content">
-        <Switch>
-        <Route exact path="/">
-        <Articles news={news}/>
-        
-        <Route exact path="/articles/:title" render ={ routerProps =>
-                <Article match={routerProps.match}/>}
-                /> 
-        </Route>
+        <div className="App">
+        <Home />
+        <Nav />
+         
+          <div className="content">
+          <Switch>
+          
+          <Route path="/contactus">
+            <Contactus />
+          </Route>
 
-        <Route></Route>
-        
-        <Route></Route>
-        
-        <Route></Route>
-        
-        
-        </Switch>
-        
-      </div>
-    
-    </div>
-    
+          <Route exact path="/:category" component={News}>
+          </Route> 
+                    
+          <Route exact path="/">
+          <News />
+          </Route>
+
+          </Switch >
+          </div>
+         
+        </div>
     </Router>
   );
 }

@@ -3,17 +3,52 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+
 }
 
+/* HEADER */
 .top__logo {
   text-align: center;
-  font-size: 5rem;
+  font-size: 2rem;
   
   color: black;
   font-style: italic;
   display: inline-block;
   margin: 0.2rem 0;
   padding: 0.2rem;
+}
+
+/* NAVIGATION AREA*/
+.personalize__navbar {
+  align-items: center;
+  margin: 0 auto;
+  font-size: 0.5rem;
+  border-bottom:3px solid #f2f2f2;
+  padding: 20px;
+  margin-top: 1rem;
+  
+    
+ }
+
+ .personalize__navbar h1 {
+  color: black;
+}
+
+.personalize__navbar .link {
+  margin: auto;
+}
+
+.personalize__navbar a {
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.personalize__navbar a:hover {
+  color: grey;
 }
 
 .navbar {
@@ -23,10 +58,12 @@
   font-size: 2rem;
   border-bottom:3px solid #f2f2f2;
   padding: 20px;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
     
  }
+
+
+
 
 .navbar h1 {
   color: black;
@@ -40,8 +77,8 @@
   text-align: center;
   text-decoration: none;
   padding: 28px;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   
 }
 
@@ -49,7 +86,12 @@
   color: grey;
 }
 
+/* USER PERSONALIZE AREA*/
 
+
+
+
+/*CONTENT*/
 body {
   width: 80%;
   margin: 0 auto;
@@ -61,10 +103,13 @@ content {
   padding: 20px;
 }
 
+/* news container */
+
 .top__headlines__container {
   text-align: center;
   margin-bottom: 3rem;
-  
+  padding: 10px 16px;
+  border-bottom: 1px solid #fafafa;
 }
 
 .top__headlines__container .title {
@@ -72,6 +117,11 @@ content {
     font-weight: bold;
     
 }
+
+.top__headlines__container:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
 
 .readMore {
   background-color: yellowgreen;
@@ -88,3 +138,6 @@ content {
   justify-content: right;
   font-weight: bold;
 }
+
+
+/* FOOTER */
