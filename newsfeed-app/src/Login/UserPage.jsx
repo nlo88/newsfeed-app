@@ -7,15 +7,18 @@ const UserLogin = (props) => {
       <div>   
                 
       <nav className="userform">
-      <p>
-        
-      Thank you , {props.name}
-      We will get back to you momentarily.
-
-      Sincerely,
-      Newsline Crew 
       
-      </p>
+      <h4>Hello,{props.name}</h4>
+      
+      <div>Thank you for reaching out. </div>
+      Your feedback is very important to us. 
+      Our team will get back to you momentarily.
+      
+      
+      <div>Sincerely,</div>
+      <div>Newsline Crew.</div> 
+     
+      
       </nav>
 
 </div>

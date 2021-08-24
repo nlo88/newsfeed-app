@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { log } from '../Log';
 
-function News(props) {
+function News (props) {
     
     const [news, setNews] = useState([])
    
@@ -19,16 +19,19 @@ function News(props) {
             .then(res => res.json())
             .then(res => { 
               setNews(res.articles)
+            
             })
             .catch(err => log(err))
           }
           getNews()
-      },
-      [props])
+      },[props])
+      
       
     return (
         <div>      
+        
         {news.map((article, index) => 
+        
         (
            <div className="top__headlines__container" key={index}>
             
@@ -39,7 +42,6 @@ function News(props) {
                <img src={article.urlToImage} alt={article.title} width ="50%"/>
                 </Link>
             
-           {/* <div className="description">{news.description}</div> */}
            <div className="content">{article.content}</div>
            <div className="publishedAt">{article.publishedAt}</div> 
             

@@ -10,7 +10,7 @@ const Home =({ news })=> {
                 <div className="left-side">
                 <nav className="navbar">
 
-                <Link to="/">HOME</Link>
+                <Link to="/business">HOME</Link>
                 <Link to="/health">HEALTH</Link>
                 <Link to="/entertainment">ENTERTAINMENT</Link>
                 <Link to="/sports">SPORTS</Link>
