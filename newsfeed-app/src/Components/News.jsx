@@ -19,9 +19,8 @@ function News (props) {
             .then(res => res.json())
             .then(res => { 
               setNews(res.articles)
-            
             })
-            .catch(err => log(err))
+            .catch(err => console.log(err))
           }
           getNews()
       },[props])

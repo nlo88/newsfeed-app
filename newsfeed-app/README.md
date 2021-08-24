@@ -1,48 +1,16 @@
-# News Feed App
-Your trusted personal news site.
+# Newsline 
+Your daily news feed starts here
 
 ## Prerequisites
 
 - React
 - Components, props, and state
 - React Router
-- Links
+
 
 ## Requirements
 
-Build a website where users can access news, be able to access the articles based on it's category and the news source link.
-
-### Step 1. Set up your GitHub page and Install
-
-- Create your git page repository , be sure to set it public and include ReadMe.MD file. 
-- Create directory on your terminal, git clone your repository.
-- Install npx create-react-dom
-- npm i create-react-dom newsfeed-app
-- cd back to your main directory
-- git add . and git commit
-- git push origin main
-- Check your repository , your commits should be updated.
-
-### Step 2. your React Router 
- - In the index.js file `import { BrowserRouter as Router } from 'react-router-dom'`.
- - Wrap the `<App />` component in the `<Router></Router>` component.
- - Start your server to make sure there are no errors.
-
-> Make sure that your server is running on port 3000 (http://localhost:3000) for this assignment. If you have any other servers running shut them down and then restart the server for this assignment.
-
-
-### Step 3. Create the News components
-Sign up to obtain your API key, be sure to select free with best API documentation. Store your API key safely in a new file called .env.local file outside your src folder  
-REACT_APP_API_KEY= your key information goes here.
-
-
-### Step 4.
-
-
-
-Create basic component name Home put some placeholder text into it so that we can make sure it's loading. Import Home component into App.js and render it inside the main tags inside of the App component. Make sure you can see the placeholder text being rendered in the browser before you move on to the next step.
-
-### Step 5.
+Build a website where users can access news, be able to access the articles based on its category and source link.
 
 
 

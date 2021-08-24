@@ -14,7 +14,6 @@ const UserLogin = (props) => {
       Your feedback is very important to us. 
       Our team will get back to you momentarily.
       
-      
       <div>Sincerely,</div>
       <div>Newsline Crew.</div> 
      
